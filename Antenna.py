@@ -42,7 +42,7 @@ ax.set_ylim(ymin=-60, ymax=max(DN))
 ax.grid(True, axis='y', color='g', linewidth=1, linestyle='--')
 ax.grid(True, axis='x', color='g', linewidth=1, linestyle='--')
 fig.tight_layout()
-  
+plt.show()
 
 fig2 = plt.figure(figsize=(20,20)) # зададим явно размер полотна, чтобы графики не перекрывались
 ax2 = fig2.add_subplot(231, projection='polar')
@@ -56,7 +56,7 @@ ax2.set_ylim(ymin=-50, ymax=max(DN))
 ax2.grid(True, color='green', linestyle='--')
 ax2.set_title("F(Theta)", loc='center')
 plt.tight_layout()
-
+plt.show()
 
 lag = math.pi/nn
 phi = np.arange(-math.pi/2, math.pi/2 , lag)
